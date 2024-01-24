@@ -1,0 +1,29 @@
+class Main {
+    function void main() {
+        var Array a;
+        var int length;
+        var int i, temp;
+	
+	let length = Keyboard.readInt("HOW MANY NUMBERS? ");
+	let a = Array.new(length);
+	let i = 0;
+	
+	while (i < length) {
+	    let a[i] = Keyboard.readInt("ENTER THE NEXT NUMBER: ");
+	    let i = i + 1;
+	}
+	
+    let i = 0;
+    let temp = a[0];
+    while (i<length) {
+        if (temp>a[i]) {
+            let temp = a[i];
+            
+        }
+        let i = i+1;
+    }
+    do Output.printString("The smallest number is :");
+    do Output.printInt(temp);
+	return ;
+    }
+}
